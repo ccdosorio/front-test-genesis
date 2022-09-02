@@ -1,0 +1,15 @@
+<mat-card *ngIf="client">
+    <mat-card-subtitle>{{ client.dpi  }}</mat-card-subtitle>
+    <mat-card-title>{{ client.name }}</mat-card-title>
+    <mat-card-content>
+        <p>{{ client.phone }}</p>
+        <p>{{ client.address }}</p>
+        <p>{{ client.maritalStatus.name }}</p>
+        <p>{{ client.department.name }}</p>
+        <p>{{ client.municipality.name }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="warn">Eliminar</button>
+        <button mat-raised-button color="accent">Editar</button>
+    </mat-card-actions>
+</mat-card>
